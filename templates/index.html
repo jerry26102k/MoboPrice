@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="static/css/index.css" rel="stylesheet" type="text/css" media="all" />
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>MoboPrice</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="{{url_for('home')}}" method="post">
+					<input class="text w3lpass" type="text" id = "internal_memory"name="a" placeholder="Internal Memory" required="">
+					<input class="text w3lpass" type="text" id = "ram" name="b" placeholder="RAM" required="">
+					<input class="text w3lpass" type="text" id = processor" name="c" placeholder="Processor" required="">
+					<input class="text w3lpass" type="text" id = "rare_camera" name="d" placeholder="Rear Camera" required="">
+                    <input class="text w3lpass" type="text" id = "front_camera" name="e" placeholder="Front Camera" required="">
+                    <input class="text w3lpass" type="text" id = "no_of_camera" name="f" placeholder="No of Camera's" required="">
+                    <input class="text w3lpass" type="text" id = "battery" name="g" placeholder="Battery" required="">
+                    <input class="text w3lpass" type="text" id = "screen_type" name="h" placeholder="Screen Type" required="">
+                    <input class="text w3lpass" type="text" id = "brand" name="i" placeholder="Brand" required="">
+					<div class="wthree-text">
+
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" onclick="send_data()" value="Predict Price">
+				</form>
+				</br>
+				<div class = "text w3lpass" style="text-align: center">
+					<h3>{{prediction_text}}</h3>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="colorlibcopy-agile">
+			
+		</div>
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
